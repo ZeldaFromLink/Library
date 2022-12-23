@@ -1,0 +1,52 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: -8px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 1% 1% 1% 1%;
+    background: url(./images/jon-tyson-10UkhGVQ07E-unsplash.jpg) no-repeat
+        center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+}
+
+.img-description {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 100%;
+    color: white;
+    font-weight: 700;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.left {
+    display: flex;
+    height: 100%;
+    width: 40%;
+}
