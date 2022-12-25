@@ -12,16 +12,51 @@
 </head>
 <body>
     <div class="container">
-        <div class="left">
-            <div class="img">
-                <div class="img-description">
-                    <p class="img-info">Photo by Jon Tyson</p>
-                    <a href="https://unsplash.com/photos/10UkhGVQ07E">
-                        <p class="img-info">https://unsplash.com/photos/10UkhGVQ07E</p>
-                    </a>
-                </div>
+        <div class="img">
+            <div class="logo">
+                <img src="./images/odin-lined.png" alt="logo" class="head">
+                <h1 class="odin">Odin</h1>
             </div>
         </div>
+        <div class="right">
+            <div class="dummy-text">
+                <p class="top-text">This is not a real cult! You know you need something like this 
+                    in your life. A community to help you realize our deepest dreams. <br> Sign up <em>now</em>
+                    to get started. <br><br> You <em>know</em> you want to.
+                </p>
+            </div>
+            <form action="#">
+                <div class="form-left">
+                    <p class="form-title">Welcome to the family!</p>
+                    <div class="input" style="float:left;">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input" style="float:right;">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="input" style="float:left;">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div class="input" style="float:right;">
+                        <label for="phone-number">Phone number</label>
+                        <input type="text" name="phone-number" id="phone-number" required>
+                    </div>
+                    <div class="input" style="float:left;">
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password" required>
+                    </div>
+                    <div class="input" style="float:right;">
+                        <label for="valid-password">Confirm Password</label>
+                        <input type="text" name="valid-password" id="valid-password" required>
+                    </div>
+                </div>
+                <div class="left-button"><button type="submit">Create Account</button></div>
+            </form>
+            <div class="log-in"><p>Already have an account?</p><a href="#">Log in</a></div>
         </div>
+    </div>
 </body>
 </html>
