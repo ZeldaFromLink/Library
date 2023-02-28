@@ -31,9 +31,12 @@ function render() {
       <div class="card-body">
         <p>${book.pages} pages</p>
         <p class="read-status">${book.read ? 'Read' : 'Not Read Yet'}</p>
-        <button class='remove-btn' onclick='removeBook(${i})'>Remove</button>
-        <button class='toggle-read' onclick='toggleRead(${i})'>Toggle Read</button>
       </div>
+      <div class="buttons">
+          <button class='remove-btn' onclick='removeBook(${i})'>Remove</button>
+          <button class='toggle-read' onclick='toggleRead(${i})'>Toggle Read</button>
+      </div>
+      
       `;
     libraryEl.appendChild(bookEl);
   }
@@ -62,6 +65,7 @@ newBookbtn.addEventListener('click', () => {
 });
 
 document.querySelector('#new-book-form').addEventListener('submit', () => {
+  // eslint-disable-next-line no-restricted-globals
   event.preventDefault();
   addBookToLibrary();
 });
